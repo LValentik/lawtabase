@@ -10,8 +10,13 @@ $dbhost = 'localhost';
 $dbport = '5432';
 
 $conn = pg_connect("host=$dbhost port=$dbport dbname=$dbname user=$dbuser password=$dbpass");
+if(!$search_parag){
+    $sql = "SELECT * FROM $legislative.$law WHERE law LIKE '%$search_law%'";
+}
+else {
+    $sql = "SELECT * FROM $legislative.$law WHERE paragraph_num = '$search_parag' OR law LIKE '%$search_law'";
+}
 
-$sql = "SELECT * FROM $legislative.$law WHERE paragraph_num = '$search_parag' OR law LIKE '$search_law'";
 $result = pg_query($conn, $sql);
 
 if (!$result) {
@@ -21,7 +26,7 @@ if (!$result) {
 
 echo "<table>\n";
 while ($row = pg_fetch_assoc($result)) {
-    echo "<tr>";
+    echo "<tr border>";
     echo "<td>" . $row['paragraph_num'] . "</td>";
     echo "<td>" . $row['law'] . "</td>";
     echo "</tr>\n";

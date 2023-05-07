@@ -15,3 +15,7 @@ submit
 {
 display: none;
 }
+img
+{
+max-width: auto;
+}
