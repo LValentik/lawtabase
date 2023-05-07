@@ -1,4 +1,4 @@
 # lawtabase
 1. Název: Lawtabase
-2. Cílem projektu je vytvořit rozsáhlou databázi pravidel, práv, zákonů apod. 
-3. Technologie: Visual Studio, JavaScript, HTML, CSS, SQL, Webový prohlížeč, PostgreSQL. Obtížnost: Těžká
+2. Cílem projektu je vytvořit rozsáhlou databázi pravidel, práv, zákonů s přístupem pomocí searchbaru na webové stránce
+3. Technologie: Visual Studio Code, JavaScript, HTML, CSS, SQL, PHP, Webový prohlížeč, PostgreSQL, ChatGPT. Obtížnost: Těžká
