@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>Lawtabase</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\lukas\OneDrive\Plocha\Lawtabase\Stránka\CSS\lawtabase-style.css">
+    <link rel="stylesheet" type="text/css" href="C:\Apache24\htdocs\Stránka\CSS\lawtabase-style.css">
    
 </head>
 <body>
     
-    <img src="C:\Users\lukas\OneDrive\Plocha\Lawtabase\Grafika\logov1.png" alt="Lawtabase logo" width="100" height="100">
-    <form method="post" action="dbsrch.php">
+    <img src="//localhost/Grafika/logov1.png" alt="Lawtabase logo" width="100" height="100">
+    <form method="post" action="//localhost/Stránka/PHP/dbsrch.php">
         <select id="legislative" name="legislative" placeholder="legislative">
             <option value="cz_leg">Czech legislative</option>
             <option value="2">U.S. Code</option>
@@ -20,11 +20,12 @@
             <option value="tz_40_2009_sb">Trestní zákoník</option>
             <option value="zp_262_2006_sb">Zákoník práce</option>
         </select>
-        <input type="text" id="search" name="search" placeholder="Search.."/>
+        <input type="text" id="search_parag" name="search_parag" placeholder="Vyhledejte číslo paragrafu..."/>
+        <input type="text" id="search_law" name="search_law" placeholder="Vyhledejte zákon..."/>
         <input type="submit" id="search-button" value="Search"/>
     </form>
     
 
-    <script src="C:\Users\lukas\OneDrive\Plocha\Lawtabase\Stránka\JS\lawtabase-js.js"></script>
-    <script src="C:\Users\lukas\OneDrive\Plocha\Lawtabase\Stránka\PHP\dbsrch.php"></script>"    
+    <script src="//localhost/Stránka/JS/lawtabase-js.js"></script>
+    <script src="//localhost/Stránka/PHP/dbsrch.php"></script>"    
 </body> 
