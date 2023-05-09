@@ -26,6 +26,7 @@ if (!$result) {
 
 echo "<table>\n";
 while ($row = pg_fetch_assoc($result)) {
+    echo"<a href='//localhost/Stránka/HTML'>Zpět</a>";
     echo "<tr border>";
     echo "<td>" . $row['paragraph_num'] . "</td>";
     echo "<td>" . $row['law'] . "</td>";
